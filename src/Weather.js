@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const [city, setCity] = useState(props.defaultCity);
+    const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     setWeatherData({
