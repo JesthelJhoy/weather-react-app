@@ -1,14 +1,17 @@
+import React from "react";
 import Weather from "./Weather";
-import "./Weather.css";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <Weather />
+      <div className="container">
+        <Weather defaultCity="New York" />
+
+        <footer>This project was coded by Jesthel.</footer>
+      </div>
     </div>
   );
 }
-
-export default App;
