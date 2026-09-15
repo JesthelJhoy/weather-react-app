@@ -37,7 +37,8 @@ export default function Weather(props) {
 
   useEffect(() => {
     search();
-  }, [city]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function handleSubmit(event) {
     event.preventDefault();
