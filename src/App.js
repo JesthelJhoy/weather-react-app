@@ -10,7 +10,7 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="New York" />
 
-        <footer>
+        <footer className="text-center">
           This project was coded by Jesthel J. and is{" "}
           <a
             href="https://github.com/JesthelJhoy/weather-react-app"
