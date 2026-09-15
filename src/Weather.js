@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import WeatherInfo from "./WeatherInfo";
-import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
 import "./Weather.css";
 
@@ -38,7 +37,7 @@ export default function Weather(props) {
 
   useEffect(() => {
     search();
-  }, []);
+  }, [city]);
 
   function handleSubmit(event) {
     event.preventDefault();
